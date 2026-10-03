@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Build your party tray | Amrut Eleven</title>
+  <meta name="description" content="Pick dishes for your event and get a confirmed price from Amrut Eleven.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar topbar-light on-marigold">
+  <div class="wrap topbar-inner">
+    <a class="wordmark" href="index.html">Amrut Eleven</a>
+    <a class="btn btn-outline btn-small" href="index.html">Back to site</a>
+  </div>
+</header>
+
+<main>
+  <section class="quote-head on-marigold">
+    <div class="wrap">
+      <h1 class="h-hero">Build your party tray</h1>
+      <p class="lead">Tell us what you want to serve. We reply with a confirmed price.</p>
+    </div>
+  </section>
+
+  <form class="wrap quote-grid" id="quote-form" novalidate>
+    <div class="form-block">
+      <h2 class="h-card">Your event</h2>
+      <div class="field-row">
+        <label class="field">
+          <span class="field-label">Guests</span>
+          <input class="input" id="guests" type="number" inputmode="numeric" min="1" max="2000" required>
+        </label>
+        <label class="field">
+          <span class="field-label">Event date</span>
+          <input class="input" id="date" type="date" required>
+        </label>
+      </div>
+      <p class="error" id="err-event" hidden></p>
+      <label class="field">
+        <span class="field-label">Your name</span>
+        <input class="input" id="name" type="text" autocomplete="name" required>
+        <span class="error" id="err-name" hidden>Enter your name so we know who to ask for.</span>
+      </label>
+      <label class="field">
+        <span class="field-label">Phone number</span>
+        <input class="input" id="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="10 digit mobile number" required>
+        <span class="error" id="err-phone" hidden>Enter a 10 digit mobile number so we can call you back.</span>
+      </label>
+    </div>
+
+    <div class="form-block ticket-col">
+      <div class="ticket">
+        <div class="ticket-head">
+          <h2 class="h-card">Your tray</h2>
+          <span class="small muted" id="guest-note"></span>
+        </div>
+        <hr class="perf">
+        <ul class="lines" id="lines" aria-live="polite"></ul>
+        <hr class="perf">
+        <div class="add">
+          <p class="line-name" id="add-title">Add a dish</p>
+          <label class="field">
+            <span class="field-label">Category</span>
+            <select class="input" id="category"></select>
+          </label>
+          <label class="field">
+            <span class="field-label">Dish</span>
+            <select class="input" id="dish" disabled></select>
+          </label>
+        </div>
+        <hr class="perf">
+        <div class="total">
+          <span class="total-label" id="total-label">Grand total</span>
+          <span class="total-value" id="total-value">₹0</span>
+        </div>
+        <p class="small muted" id="total-note"></p>
+      </div>
+
+      <p class="error" id="err-dishes" hidden>Add at least one dish to send the request.</p>
+
+      <div class="quote-actions" id="actions">
+        <button class="btn btn-primary btn-block" type="submit">Send request</button>
+        <a class="btn btn-outline btn-block" id="wa-quote" href="#" target="_blank" rel="noopener">Talk to our team on WhatsApp</a>
+        <p class="small muted center">Nothing is charged on this site.</p>
+      </div>
+
+      <div class="sent" id="sent" role="status" tabindex="-1" hidden>
+        <h2 class="h-card">Request sent</h2>
+        <p id="sent-text"></p>
+        <button class="btn btn-outline-light" type="button" id="edit-again">Change this request</button>
+      </div>
+    </div>
+  </form>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="wordmark">Amrut Eleven</span>
+        <p>Pure veg cloud kitchen. Cooking 24 hours a day, every day.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="index.html#menu">Menu</a><a href="index.html#story">Our story</a>
+        <a href="index.html#delivery">Delivery areas</a><a href="index.html#chefs">Chefs</a>
+        <a href="index.html#contact">Contact</a><a href="index.html#reviews">Reviews</a>
+      </nav>
+    </div>
+    <p class="legal small">Part of Twoseven11 Foods Pvt. Ltd.</p>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="quote.js"></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amrut Eleven | Pure veg party trays</title>
+  <meta name="description" content="Pure veg cloud kitchen in Bhubaneswar. Party trays cooked on the day of your event, open 24 hours.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="wordmark" href="#top">Amrut Eleven</a>
+    <nav class="topnav" aria-label="Sections">
+      <a href="#menu">Menu</a>
+      <a href="#story">Our story</a>
+      <a href="#chefs">Chefs</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#delivery">Delivery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-primary btn-small" href="quote.html">Get a quote</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="status"><span class="status-dot"></span>Kitchen open, all 24 hours</p>
+        <h1 class="h-hero">Party trays for the whole guest list.</h1>
+        <p class="lead">Pure veg food cooked on the day of your event, for 20 guests or 500.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="quote.html">Build your tray</a>
+          <a class="btn btn-outline-light" href="#menu">See the menu</a>
+        </div>
+      </div>
+      <div class="plate" aria-hidden="true">
+        <svg class="plate-svg" viewBox="0 0 240 240">
+          <circle cx="120" cy="120" r="120" fill="#FF9A1F"/>
+          <circle cx="120" cy="120" r="106" fill="none" stroke="#1E1230" stroke-opacity=".16" stroke-width="2"/>
+          <g fill="#FBE9D0">
+            <circle cx="52.3" cy="95.4" r="23"/><circle cx="89.6" cy="54.8" r="23"/>
+            <circle cx="150.4" cy="54.8" r="23"/><circle cx="187.7" cy="95.4" r="23"/>
+          </g>
+          <circle cx="52.3" cy="95.4" r="17" fill="#E4432F"/>
+          <circle cx="89.6" cy="54.8" r="17" fill="#3F7D4C"/>
+          <circle cx="150.4" cy="54.8" r="17" fill="#1E1230"/>
+          <circle cx="187.7" cy="95.4" r="17" fill="#FFFFFF"/>
+          <circle cx="86" cy="160" r="30" fill="#FBE9D0" stroke="#1E1230" stroke-opacity=".18" stroke-width="2"/>
+          <circle cx="146" cy="162" r="36" fill="#FFFFFF"/>
+          <circle cx="146" cy="150" r="10" fill="#E4432F"/>
+        </svg>
+        <div class="sticker">Pure veg,<br>always</div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="jump" aria-label="Jump to a section">
+    <div class="chips">
+      <a class="chip" href="#menu">Menu</a>
+      <a class="chip" href="#story">Our story</a>
+      <a class="chip" href="#chefs">Chefs</a>
+      <a class="chip" href="#reviews">Reviews</a>
+      <a class="chip" href="#delivery">Delivery</a>
+      <a class="chip" href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="banner-section" aria-label="Current offers">
+    <div class="wrap">
+      <div id="banner" aria-live="polite"></div>
+      <div class="dots" id="banner-dots"></div>
+    </div>
+  </section>
+
+  <section class="section bg-marigold on-marigold">
+    <div class="wrap">
+      <div class="section-head"><h2 class="h-section">How a party order works</h2></div>
+      <ol class="steps">
+        <li class="step"><span class="step-num">1</span><div><p class="step-title">Pick your dishes</p><p class="step-text">Choose from the menu and tell us how many guests are coming.</p></div></li>
+        <li class="step"><span class="step-num">2</span><div><p class="step-title">Send the request</p><p class="step-text">It takes about two minutes. Nothing to pay online.</p></div></li>
+        <li class="step"><span class="step-num">3</span><div><p class="step-title">We call you back</p><p class="step-text">Our team confirms the price and your delivery time.</p></div></li>
+      </ol>
+      <a class="btn btn-dark btn-block btn-auto" href="quote.html">Build your tray</a>
+    </div>
+  </section>
+
+  <section class="section" id="menu">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="h-section">The menu</h2>
+        <p class="muted">Every dish is vegetarian. Prices are for one plate.</p>
+      </div>
+      <div class="menu-list" id="menu-list"></div>
+      <div class="menu-actions">
+        <a class="btn btn-outline btn-block btn-auto" href="#" id="menu-pdf">Download the menu as a PDF</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-mehendi" id="story">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="h-section">A kitchen that never closes.</h2>
+        <p class="lead">Amrut Eleven is a pure veg cloud kitchen from Twoseven11 Foods. We cook home deliveries through the night and party orders through the day.</p>
+      </div>
+      <ul class="stats" id="stats"></ul>
+      <p class="note">Our sister kitchens are Tandoor &amp; Kabab, Shradhanjali Kitchen and Hotel Aura.</p>
+    </div>
+  </section>
+
+  <section class="section" id="chefs">
+    <div class="wrap">
+      <div class="section-head"><h2 class="h-section">The people at the stove.</h2></div>
+      <ul class="row-scroll chefs-row" id="chef-list"></ul>
+    </div>
+  </section>
+
+  <section class="section bg-kumkum" id="reviews">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="h-section">What guests told us.</h2>
+        <div class="rating" id="rating"></div>
+      </div>
+      <ul class="row-scroll reviews-row" id="review-list"></ul>
+    </div>
+  </section>
+
+  <section class="section bg-ink" id="delivery">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="h-section">Where we deliver.</h2>
+        <p class="lead">Party orders reach most of Bhubaneswar. Check your area below.</p>
+      </div>
+      <div class="delivery-grid">
+        <div class="rings" aria-hidden="true">
+          <svg viewBox="0 0 400 260">
+            <g fill="#FBE9D0" stroke="#FBE9D0" stroke-width="1.5" stroke-dasharray="5 6">
+              <circle cx="150" cy="170" r="230" fill-opacity=".05" stroke-opacity=".35"/>
+              <circle cx="150" cy="170" r="160" fill-opacity=".07" stroke-opacity=".45"/>
+              <circle cx="150" cy="170" r="90" fill-opacity=".1" stroke-opacity=".6"/>
+            </g>
+            <g fill="#FBE9D0">
+              <circle cx="95" cy="135" r="5"/><circle cx="225" cy="80" r="5"/><circle cx="305" cy="145" r="5"/>
+              <circle cx="45" cy="75" r="5"/><circle cx="365" cy="55" r="5"/>
+            </g>
+            <g fill="#FBE9D0" font-family="Manrope, sans-serif" font-size="12" font-weight="600" text-anchor="end">
+              <text x="230" y="174">5 km</text><text x="300" y="174">10 km</text><text x="370" y="174">15 km</text>
+            </g>
+            <circle cx="150" cy="170" r="14" fill="#FF9A1F"/>
+            <text x="150" y="206" fill="#FF9A1F" font-family="Manrope, sans-serif" font-size="15" font-weight="600" text-anchor="middle">Our kitchen</text>
+          </svg>
+        </div>
+        <div class="area-check">
+          <label class="field">
+            <span class="field-label">Area or PIN code</span>
+            <input class="input" id="area-input" type="text" autocomplete="off" placeholder="Try Patia or 751016">
+          </label>
+          <div id="area-result" role="status"></div>
+          <ul class="areas" id="area-list"></ul>
+          <p class="note">Not on the list? Call us anyway. For large orders we often travel further.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <div class="section-head">
+          <h2 class="h-section">Talk to the kitchen.</h2>
+          <p class="muted">Someone picks up at any hour.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-primary" id="wa-link" href="#">Message us on WhatsApp</a>
+          <a class="btn btn-dark" id="call-link" href="#">Call the kitchen</a>
+        </div>
+      </div>
+      <ul class="details" id="details"></ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="wordmark">Amrut Eleven</span>
+        <p>Pure veg cloud kitchen. Cooking 24 hours a day, every day.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="#menu">Menu</a><a href="#story">Our story</a>
+        <a href="quote.html">Party quote</a><a href="#chefs">Chefs</a>
+        <a href="#delivery">Delivery areas</a><a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <p class="legal small">Part of Twoseven11 Foods Pvt. Ltd.</p>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

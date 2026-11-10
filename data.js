@@ -2,22 +2,22 @@
 window.AMRUT = {
   outlet: {
     name: "Amrut Eleven",
-    phone: "+91 98765 00011",
-    phoneHref: "+919876500011",
-    whatsapp: "919876500011",
-    email: "orders@amruteleven.in",
-    address: "Plot 11, Infocity Road, Patia, Bhubaneswar 751024",
+    phone: "+91 99380 82915",
+    phoneHref: "+919938082915",
+    whatsapp: "919938082915",
+    email: "leads@twoseven11.com",
+    address: "Near KIIT School of Biotechnology & Law, Campus 11, Prasanti Vihar, Patia, Bhubaneswar 751024",
     hours: "Open 24 hours, every day",
     city: "Bhubaneswar",
   },
 
   banners: [
-    {
-      tag: "Order by 5 November",
-      title: "Diwali sweets box, 24 pieces",
-      text: "Kaju katli, motichoor laddu and gulab jamun, packed for gifting.",
-      tone: "kumkum",
-    },
+    // {
+    //   tag: "Order by 5 November",
+    //   title: "Diwali sweets box, 24 pieces",
+    //   text: "Kaju katli, motichoor laddu and gulab jamun, packed for gifting.",
+    //   tone: "kumkum",
+    // },
     {
       tag: "Every weekend",
       title: "Biryani trays for 20",
